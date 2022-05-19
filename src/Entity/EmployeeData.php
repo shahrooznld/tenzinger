@@ -28,12 +28,12 @@ class EmployeeData
     private $transport;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="float")
      */
     private $distance;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="float")
      */
     private $work_days;
 
@@ -66,24 +66,24 @@ class EmployeeData
         return $this;
     }
 
-    public function getDistance(): ?int
+    public function getDistance(): ?float
     {
         return $this->distance;
     }
 
-    public function setDistance(int $distance): self
+    public function setDistance(float $distance): self
     {
         $this->distance = $distance;
 
         return $this;
     }
 
-    public function getWorkDays(): ?int
+    public function getWorkDays(): ?float
     {
         return $this->work_days;
     }
 
-    public function setWorkDays(int $work_days): self
+    public function setWorkDays(float $work_days): self
     {
         $this->work_days = $work_days;
 
